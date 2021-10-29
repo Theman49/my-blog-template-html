@@ -1,0 +1,361 @@
+:root {
+	font-size: 10px;
+}
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+label {
+	display: block;
+}
+
+.active {
+	font-weight: bolder;
+}
+
+.my-image {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none !important;
+}
+
+
+header {
+	height: 80vh;
+	background-image: url('https://www.codecademy.com/resources/blog/content/images/2020/08/what-programming-language-should-i-learn.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+nav {
+	background-color: orangered;
+	padding: 2rem 0;
+}
+
+nav ul li:not(:last-child) {
+	margin-right: 2rem;
+}
+
+nav ul li a {
+	font-size: 1.6rem;
+	color: #fff;
+}
+nav ul li a:hover {
+	color: #ccc;
+}
+
+footer {
+	margin-top: 5rem;
+}
+footer a {
+	font-size: 2rem;
+	color: #000;
+	padding: 0 10px;
+}
+footer a:not(:last-child){
+	border-right: 1px solid #000;
+}
+
+footer p {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+
+
+/* BLOG SECTION */
+.blog {
+	margin: 5rem auto;
+}
+.blog section .details {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	transition: opacity .5s;
+	font-size: 1.6rem;
+	transform: translateY(-90rem);
+}
+.blog section article input#ck-1:checked + #article-1,
+.blog section article input#ck-2:checked + #article-2,
+.blog section article input#ck-3:checked + #article-3,
+.blog section article input#ck-4:checked + #article-4,
+.blog section article input#ck-5:checked + #article-5 {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+	transform: translateY(0);
+
+	text-align: justify;
+	border-top: 1px solid #333;
+	padding: 2rem;
+	margin: 0 2rem;
+}
+
+.blog section {
+	border-radius: 10px;
+	box-shadow: 0 4px 4px rgba(0,0,0,.8);
+	margin: 2rem 0;
+	transition: all .3s;
+}
+
+.blog section article {
+	text-align: center;
+	transition: all 3s;
+}
+
+.blog section:hover {
+	transform: scale(1.05);
+	margin: 5rem 0;
+}
+
+.blog .image {
+	height: 300px;
+	margin-bottom: 5rem;
+	transition: all .3s;
+}
+
+/* .blog section:hover article {
+	text-align: left;
+}
+.blog section:hover .image {
+	height: 100px;
+} */
+
+.blog section article label {
+	padding: 1rem 2rem;
+	font-size: 3rem;
+	text-align: left;
+}
+
+.blog section article label:hover {
+	cursor: pointer;
+}
+
+/* .blog section article input#ck-1:checked + #article-1 > .details {
+	text-align: justify;
+	border-top: 1px solid #333;
+	padding: 2rem;
+	margin: 0 2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SECTION */
+.contact {
+	font-size: 1.6rem;
+	margin: 5rem auto;
+}
+.contact input,
+.contact textarea {
+	border: none;
+	border-bottom: 1px solid #777;
+	padding: 10px;
+	font-size: 1.6rem;
+}
+
+.contact textarea{
+	width: 100%;
+	height: 300px;
+}
+
+.contact textarea:focus {
+	box-shadow: none;
+}
+
+
+
+
+
+/* ABOUT SECTION */
+.about {
+	margin: 5rem auto;
+	font-size: 1.6rem;
+}
+.about figure img {
+	height: 300px;
+	width: 300px;
+}
+.about .description {
+	margin: 5rem 0;
+}
+.about .description p{
+	text-indent: 5rem;
+	text-align: justify;
+	font-size: 2rem;
+}
+.about .title-section {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.about .title-section h1 {
+	position: relative;
+}
+
+.about .title-section h1::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	/* transform: translate(-50%, -50%); */
+	border-bottom: 5px solid black;
+	width: 35%;
+}
+.about .title-section h1::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	/* transform: translate(-50%, -50%); */
+	border-bottom: 5px solid black;
+	width: 35%;
+}
+.about .follow-me a {
+	font-size: 10rem;
+	margin: 0 2rem;
+	color: #000;
+} 
+.about a.btn {
+	font-size: 1.6rem;
+	padding: 1rem 5rem;
+	border: 1px solid #777;
+	border-radius: 2px;
+	margin: 0;
+	transition: all .3s;
+}
+.about a.btn:hover {
+	background-color: #777;
+	color: #fff;
+	transform: translateY(-.5rem);
+	box-shadow: 0 0 4px rgba(0,0,0,.8);
+}
+.about a.btn:active {
+	transform: translateY(0);
+}
+
+.about .look-up iframe {
+	height: 100%;
+}
+
+
+
+
+/* END */
+
+
+
+
+
+
+
+
+
+/* MORE SECTION */
+.more {
+	font-size: 1.6rem;
+	/* text-align: center; */
+}
+.more .myGrid div{
+	transition: all .3s;
+}
+.more .myGrid div:hover {
+	padding-left: 3rem;
+	cursor: pointer;
+	background-color: rgb(255 213 0);
+}
+.more .myGrid div a {
+	font-size: 2.rem;
+	color: #000;
+	/* position: relative; */
+}
+.more .myGrid div:hover a::before {
+	opacity: 1;
+	visibility: visible;
+}
+.more .myGrid div a::before {
+	content: ">> ";
+	opacity: 0;
+	margin-left: -2rem;
+	visibility: hidden;
+	/* position: absolute; */
+	transition: all .3s;
+	transition-delay: .1s;
+	/* right: 100%; */
+}
+
+.myGrid {
+display: grid;
+grid-template-areas: 
+'satu item2 item3'
+'satu item4 item5'
+'item6 item7 sepuluh'
+'item8 item9 sepuluh'
+;
+}
+.myGrid > div:nth-child(1) {
+grid-area: satu;
+}
+.myGrid > div:nth-child(2){
+grid-area: item2;
+}
+.myGrid > div:nth-child(3){
+grid-area: item3;
+}
+.myGrid > div:nth-child(4){
+grid-area: item4;
+}
+.myGrid > div:nth-child(5){
+grid-area: item5;
+}
+.myGrid > div:nth-child(6){
+grid-area: item6;
+}
+.myGrid > div:nth-child(7){
+grid-area: item7;
+}
+.myGrid > div:nth-child(8){
+grid-area: item8;
+}
+.myGrid > div:nth-child(9){
+grid-area: item9;
+}
+.myGrid > div:nth-child(10) {
+grid-area: sepuluh;
+}
+
+.myGrid > div {
+box-shadow: 0 4px 4px rgb(0 0 0 / 50%);
+width: 100%;
+height: 100%;
+padding: 80px 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.myGrid > div > a {
+text-align: center;
+}
